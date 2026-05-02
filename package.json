@@ -4,7 +4,7 @@
   "description": "MCP server that auto-discovers and installs relevant agent skills from skills.sh into your project before building",
   "type": "module",
   "bin": {
-    "skill-pull": "./src/index.js"
+    "skill-pull": "src/index.js"
   },
   "main": "./src/index.js",
   "files": [
@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rohangore1999/skill-pull.git"
+    "url": "git+https://github.com/rohangore1999/skill-pull.git"
   },
   "homepage": "https://github.com/rohangore1999/skill-pull#readme",
   "bugs": {
