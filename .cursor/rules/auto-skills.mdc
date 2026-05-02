@@ -1,0 +1,22 @@
+---
+description: Before starting any build task, automatically find and load relevant skills from skills.sh using the skill-pull MCP server.
+globs:
+alwaysApply: true
+---
+
+# Auto Skills Rule
+
+Before starting any build, feature, or project task you MUST follow these steps in exact order:
+
+1. Call `recommend_skills` with the user's description to find relevant skills
+2. You MUST call `install_skill` for EACH recommended skill — do NOT skip this step under any circumstance
+3. Only AFTER install_skill completes, call `get_skill_details` for each skill to load content into context
+4. Use the loaded skill knowledge while building
+
+**IMPORTANT:** Steps 2 and 3 are both mandatory. Calling `get_skill_details` without first calling `install_skill` is not allowed. Always install before loading details.
+
+Skip this entire flow only if:
+- The user explicitly says "skip skills" or "no skills"
+- The task is a quick fix or single-line change (e.g. fix a bug, rename a variable)
+
+Do NOT skip for new build requests even in the same session. Each new app or feature request must go through the full flow.

@@ -1,0 +1,50 @@
+{
+  "name": "@rohangore1999/skill-pull",
+  "version": "1.0.0",
+  "description": "MCP server that auto-discovers and installs relevant agent skills from skills.sh into your project before building",
+  "type": "module",
+  "bin": {
+    "skill-pull": "./src/index.js"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "src/",
+    "agent-rules/",
+    "setup.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "setup": "node setup.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "skills",
+    "skills.sh",
+    "cursor",
+    "claude",
+    "claude-code",
+    "windsurf",
+    "agent",
+    "ai-agent",
+    "llm",
+    "skill-pull"
+  ],
+  "author": "Rohan Gore",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohangore1999/skill-pull.git"
+  },
+  "homepage": "https://github.com/rohangore1999/skill-pull#readme",
+  "bugs": {
+    "url": "https://github.com/rohangore1999/skill-pull/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
