@@ -1,5 +1,9 @@
 # skill-pull
 
+[![npm version](https://img.shields.io/npm/v/@rohangore1999/skill-pull.svg)](https://www.npmjs.com/package/@rohangore1999/skill-pull)
+[![npm downloads](https://img.shields.io/npm/dm/@rohangore1999/skill-pull.svg)](https://www.npmjs.com/package/@rohangore1999/skill-pull)
+[![license](https://img.shields.io/npm/l/@rohangore1999/skill-pull.svg)](https://github.com/rohangore1999/skill-pull/blob/main/LICENSE)
+
 > Auto-discover and install the right skills from [skills.sh](https://skills.sh) before your AI agent builds anything.
 
 An MCP server for Cursor, Claude Code, Windsurf, and any MCP-compatible agent. Tell it what you want to build — it finds the best skills, installs them to disk, and loads their knowledge into context automatically.
